@@ -1,9 +1,9 @@
-FlatDict
+FlatDict2
 ========
 |Version| |Status| |Coverage| |License|
 
-``flatdict`` is a Python module for interacting with nested dicts as a single
-level dict with delimited keys. ``flatdict`` supports Python 3.5+.
+``flatdict2`` is a Python module for interacting with nested dicts as a single
+level dict with delimited keys. ``flatdict2`` supports Python 3.6+.
 
 Jump to :ref:`installation`, :ref:`example`, or :ref:`docs`.
 
@@ -11,7 +11,7 @@ Jump to :ref:`installation`, :ref:`example`, or :ref:`docs`.
 
 .. code-block:: python
 
-    value = flatdict.FlatDict({'foo': {'bar': 'baz', 'qux': 'corge'}})
+    value = flatdict2.FlatDict({'foo': {'bar': 'baz', 'qux': 'corge'}})
 
 *can be accessed as:*
 
@@ -30,13 +30,13 @@ Jump to :ref:`installation`, :ref:`example`, or :ref:`docs`.
     print(foo['foo']['bar'])
 
 Additionally, lists and tuples are also converted into dicts using enumerate(),
-using the :py:class:`~flatdict.FlatterDict` class.
+using the :py:class:`~flatdict2.FlatterDict` class.
 
 *For example:*
 
 .. code-block:: python
 
-    value = flatdict.FlatterDict({'list': ['a', 'b', 'c']})
+    value = flatdict2.FlatterDict({'list': ['a', 'b', 'c']})
 
 *will be flattened as follows:*
 
@@ -51,7 +51,7 @@ Installation
 
 .. code-block:: bash
 
-    $ pip install flatdict
+    $ pip install flatdict2
 
 Versioning
 ----------
@@ -68,15 +68,15 @@ version and less than the next major version.
 Example Use
 -----------
 
-:py:class:`flatdict.FlatDict`
+:py:class:`flatdict2.FlatDict`
 
 .. code-block:: python
 
     import pprint
 
-    import flatdict
+    import flatdict2
 
-    flat = flatdict.FlatDict(
+    flat = flatdict2.FlatDict(
         {'foo': {'bar': {'baz': 0,
                                 'qux': 1,
                                 'corge': 2},
@@ -103,13 +103,13 @@ Example Use
 
     print(flat == flat.as_dict())
 
-:py:class:`flatdict.FlatterDict`
+:py:class:`flatdict2.FlatterDict`
 
 .. code-block:: python
 
-    import flatdict
+    import flatdict2
 
-    value = flatdict.FlatterDict({'list': ['a', 'b', 'c']})
+    value = flatdict2.FlatterDict({'list': ['a', 'b', 'c']})
     for key, value in value.items():
         print(key, value)
 
@@ -118,20 +118,20 @@ Example Use
 API Documentation
 -----------------
 
-.. automodule:: flatdict
+.. automodule:: flatdict2
     :members:
     :undoc-members:
     :inherited-members:
 
-.. |Version| image:: https://img.shields.io/pypi/v/flatdict.svg?
-   :target: https://pypi.python.org/pypi/flatdict
+.. |Version| image:: https://img.shields.io/pypi/v/flatdict2.svg?
+   :target: https://pypi.python.org/pypi/flatdict2
 
-.. |Status| image:: https://github.com/gmr/flatdict/workflows/Testing/badge.svg
-   :target: https://github.com/gmr/flatdict/actions
+.. |Status| image:: https://github.com/gmr/flatdict2/workflows/Testing/badge.svg
+   :target: https://github.com/gmr/flatdict2/actions
    :alt: Build Status
 
-.. |Coverage| image:: https://img.shields.io/codecov/c/github/gmr/flatdict.svg?
-   :target: https://codecov.io/github/gmr/flatdict?branch=master
+.. |Coverage| image:: https://img.shields.io/codecov/c/github/gmr/flatdict2.svg?
+   :target: https://codecov.io/github/gmr/flatdict2?branch=master
 
-.. |License| image:: https://img.shields.io/pypi/l/flatdict.svg?
+.. |License| image:: https://img.shields.io/pypi/l/flatdict2.svg?
    :target: https://flatdict.readthedocs.org

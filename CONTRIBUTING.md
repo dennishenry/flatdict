@@ -20,7 +20,7 @@ coverage run && coverage report
 
 ## Test Coverage
 
-To contribute to `flatdict`, please make sure that any new features or changes to existing functionality **include test coverage**.
+To contribute to `flatdict2`, please make sure that any new features or changes to existing functionality **include test coverage**.
 
 *Pull requests that add or change code without coverage have a much lower chance of being accepted.*
 
@@ -33,7 +33,7 @@ with ``pep8`` style prior to issuing your pull request.
 
 ## Versioning
 
-flatdict subscribes to [semver](https://semver.org) style versioning.
+`flatdict2` subscribes to [semver](https://semver.org) style versioning.
 
 Given a version number `MAJOR.MINOR.PATCH` increment the:
 
