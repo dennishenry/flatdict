@@ -12,7 +12,7 @@ dictionaries as you normally would or with the composite key.
 
 .. code-block:: python
 
-    value = flatdict.FlatDict({'foo': {'bar': 'baz', 'qux': 'corge'}})
+    value = flatdict2.FlatDict({'foo': {'bar': 'baz', 'qux': 'corge'}})
 
 *would be the same as:*
 
@@ -37,7 +37,7 @@ using the ``FlatterDict`` class.
 
 .. code-block:: python
 
-    value = flatdict.FlatterDict({'list': ['a', 'b', 'c']})
+    value = flatdict2.FlatterDict({'list': ['a', 'b', 'c']})
 
 *will be the same as:*
 
@@ -78,5 +78,5 @@ Note that as of 4.0, setuptools 39.2 or higher is required for installation.
 .. |Coverage| image:: https://img.shields.io/codecov/c/github/gmr/flatdict2.svg?
    :target: https://codecov.io/github/gmr/flatdict2?branch=master
 
-.. |License| image:: https://img.shields.io/pypi/l/flatdict.svg?
+.. |License| image:: https://img.shields.io/pypi/l/flatdict2.svg?
    :target: https://flatdict.readthedocs.org
