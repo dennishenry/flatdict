@@ -1,5 +1,5 @@
 """
-Unittests for flatdict.FlatDict
+Unittests for flatdict2.FlatDict
 
 """
 import pickle
@@ -7,12 +7,12 @@ import random
 import unittest
 import uuid
 
-import flatdict
+import flatdict2
 
 
 class FlatDictTests(unittest.TestCase):
 
-    TEST_CLASS = flatdict.FlatDict
+    TEST_CLASS = flatdict2.FlatDict
 
     FLAT_EXPECTATION = {
         'foo:bar:baz': 0,
@@ -307,7 +307,7 @@ class FlatDictTests(unittest.TestCase):
 
 class FlatterDictTests(FlatDictTests):
 
-    TEST_CLASS = flatdict.FlatterDict
+    TEST_CLASS = flatdict2.FlatterDict
 
     FLAT_EXPECTATION = {
         'foo:bar:baz': 0,
