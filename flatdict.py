@@ -170,7 +170,7 @@ class FlatDict(MutableMapping):
         :rtype: dict
 
         """
-        out = dict({})
+        out = {}
         for key in self.keys():
             if self._has_delimiter(key):
                 pk, ck = key.split(self._delimiter, 1)
