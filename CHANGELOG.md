@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.0.2 (2024-08-28)
+
+- Fixes for building wheel
+
 ## 4.0.1 (2020-02-13)
 
 - Gracefully fail to install if setuptools is too old
