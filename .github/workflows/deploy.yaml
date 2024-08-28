@@ -11,7 +11,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
       - name: Build package
-        run: python3 setup.py
+        run: pip install build && python -m build
       - name: Publish package
         uses: pypa/gh-action-pypi-publish@master
         with:
