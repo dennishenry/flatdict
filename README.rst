@@ -64,19 +64,19 @@ Installation
 
 .. code-block:: bash
 
-    $ pip install flatdict
+    $ pip install flatdict2
 
 Note that as of 4.0, setuptools 39.2 or higher is required for installation.
 
-.. |Version| image:: https://img.shields.io/pypi/v/flatdict.svg?
-   :target: https://pypi.python.org/pypi/flatdict
+.. |Version| image:: https://img.shields.io/pypi/v/flatdict2.svg?
+   :target: https://pypi.python.org/pypi/flatdict2
 
-.. |Status| image:: https://github.com/gmr/flatdict/workflows/Testing/badge.svg
-   :target: https://github.com/gmr/flatdict/actions
+.. |Status| image:: https://github.com/dennishenry/flatdict2/workflows/Testing/badge.svg
+   :target: https://github.com/dennishenry/flatdict2/actions
    :alt: Build Status
 
-.. |Coverage| image:: https://img.shields.io/codecov/c/github/gmr/flatdict.svg?
-   :target: https://codecov.io/github/gmr/flatdict?branch=master
+.. |Coverage| image:: https://img.shields.io/codecov/c/github/gmr/flatdict2.svg?
+   :target: https://codecov.io/github/gmr/flatdict2?branch=master
 
 .. |License| image:: https://img.shields.io/pypi/l/flatdict.svg?
    :target: https://flatdict.readthedocs.org
