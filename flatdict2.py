@@ -14,7 +14,7 @@ NO_DEFAULT = object()
 
 
 class FlatDict(MutableMapping):
-    """:class:`~flatdict.FlatDict` is a dictionary object that allows for
+    """:class:`~flatdict2.FlatDict` is a dictionary object that allows for
     single level, delimited key/value pair mapping of nested dictionaries.
     The default delimiter value is ``:`` but can be changed in the constructor
     or by calling :meth:`FlatDict.set_delimiter`.
@@ -165,7 +165,7 @@ class FlatDict(MutableMapping):
             ['{!r}: {!r}'.format(k, self[k]) for k in self.keys()]))
 
     def as_dict(self):
-        """Return the :class:`~flatdict.FlatDict` as a :class:`dict`
+        """Return the :class:`~flatdict2.FlatDict` as a :class:`dict`
 
         :rtype: dict
 
@@ -193,7 +193,7 @@ class FlatDict(MutableMapping):
     def copy(self):
         """Return a shallow copy of the flat dictionary.
 
-        :rtype: flatdict.FlatDict
+        :rtype: flatdict2.FlatDict
 
         """
         return self.__class__(self.as_dict(), delimiter=self._delimiter)
@@ -229,7 +229,7 @@ class FlatDict(MutableMapping):
 
     def iteritems(self):
         """Return an iterator over the flat dictionary's (key, value) pairs.
-        See the note for :meth:`flatdict.FlatDict.items`.
+        See the note for :meth:`flatdict2.FlatDict.items`.
 
         Using ``iteritems()`` while adding or deleting entries in the flat
         dictionary may raise :exc:`RuntimeError` or fail to iterate over all
@@ -244,7 +244,7 @@ class FlatDict(MutableMapping):
 
     def iterkeys(self):
         """Iterate over the flat dictionary's keys. See the note for
-        :meth:`flatdict.FlatDict.items`.
+        :meth:`flatdict2.FlatDict.items`.
 
         Using ``iterkeys()`` while adding or deleting entries in the flat
         dictionary may raise :exc:`RuntimeError` or fail to iterate over all
@@ -259,7 +259,7 @@ class FlatDict(MutableMapping):
 
     def itervalues(self):
         """Return an iterator over the flat dictionary's values. See the note
-        :meth:`flatdict.FlatDict.items`.
+        :meth:`flatdict2.FlatDict.items`.
 
         Using ``itervalues()`` while adding or deleting entries in the flat
         dictionary may raise a :exc:`RuntimeError` or fail to iterate over all
@@ -274,7 +274,7 @@ class FlatDict(MutableMapping):
 
     def keys(self):
         """Return a copy of the flat dictionary's list of keys.
-        See the note for :meth:`flatdict.FlatDict.items`.
+        See the note for :meth:`flatdict2.FlatDict.items`.
 
         :rtype: list
 
@@ -357,7 +357,7 @@ class FlatDict(MutableMapping):
 
     def values(self):
         """Return a copy of the flat dictionary's list of values. See the note
-        for :meth:`flatdict.FlatDict.items`.
+        for :meth:`flatdict2.FlatDict.items`.
 
         :rtype: list
 
@@ -374,7 +374,7 @@ class FlatDict(MutableMapping):
 
 
 class FlatterDict(FlatDict):
-    """Like :class:`~flatdict.FlatDict` but also coerces lists and sets
+    """Like :class:`~flatdict2.FlatDict` but also coerces lists and sets
      to child-dict instances with the offset as the key. Alternative to
      the implementation added in v1.2 of FlatDict.
 
@@ -424,7 +424,7 @@ class FlatterDict(FlatDict):
             self._values[key] = value
 
     def as_dict(self):
-        """Return the :class:`~flatdict.FlatterDict` as a nested
+        """Return the :class:`~flatdict2.FlatterDict` as a nested
         :class:`dict`.
 
         :rtype: dict
