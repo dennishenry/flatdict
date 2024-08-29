@@ -75,8 +75,8 @@ Note that as of 4.0, setuptools 39.2 or higher is required for installation.
    :target: https://github.com/dennishenry/flatdict2/actions
    :alt: Build Status
 
-.. |Coverage| image:: https://img.shields.io/codecov/c/github/gmr/flatdict2.svg?
-   :target: https://codecov.io/github/gmr/flatdict2?branch=master
+.. |Coverage| image:: https://img.shields.io/codecov/c/github/dennishenry/flatdict2.svg?
+   :target: https://codecov.io/github/dennishenry/flatdict2?branch=main
 
 .. |License| image:: https://img.shields.io/pypi/l/flatdict2.svg?
    :target: https://flatdict.readthedocs.org
