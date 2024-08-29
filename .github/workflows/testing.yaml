@@ -21,7 +21,7 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Install codecov dependancies
-        run: apk add curl gnupg coreutils
+        run: apk add curl gnupg coreutils git
 
       - name: Bootstrap the test environment
         run: pip install -r requires/testing.txt && mkdir -p build
