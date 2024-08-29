@@ -126,12 +126,12 @@ API Documentation
 .. |Version| image:: https://img.shields.io/pypi/v/flatdict2.svg?
    :target: https://pypi.python.org/pypi/flatdict2
 
-.. |Status| image:: https://github.com/gmr/flatdict2/workflows/Testing/badge.svg
-   :target: https://github.com/gmr/flatdict2/actions
+.. |Status| image:: https://github.com/dennishenry/flatdict2/workflows/Testing/badge.svg
+   :target: https://github.com/dennishenry/flatdict2/actions
    :alt: Build Status
 
-.. |Coverage| image:: https://img.shields.io/codecov/c/github/gmr/flatdict2.svg?
-   :target: https://codecov.io/github/gmr/flatdict2?branch=master
+.. |Coverage| image:: https://img.shields.io/codecov/c/github/dennishenry/flatdict2.svg?
+   :target: https://codecov.io/github/dennishenry/flatdict2?branch=main
 
 .. |License| image:: https://img.shields.io/pypi/l/flatdict2.svg?
    :target: https://flatdict.readthedocs.org
