@@ -20,6 +20,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v1
 
+      - name: Install codecov dependancies
+        run: apk add curl gnupg coreutils
+
       - name: Bootstrap the test environment
         run: pip install -r requires/testing.txt && mkdir -p build
 
@@ -34,4 +37,3 @@ jobs:
         with:
           token: ${{secrets.CODECOV_TOKEN}}
           file: build/coverage.xml
-          os: alpine
