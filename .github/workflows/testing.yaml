@@ -34,3 +34,4 @@ jobs:
         with:
           token: ${{secrets.CODECOV_TOKEN}}
           file: build/coverage.xml
+          os: alpine
