@@ -8,7 +8,7 @@ except ImportError:  # pragma: nocover
     from collections import MutableMapping
 import sys
 
-__version__ = '4.0.4'
+__version__ = '4.0.5'
 
 NO_DEFAULT = object()
 
@@ -183,7 +183,10 @@ class FlatDict(MutableMapping):
                 else:
                     out[pk][ck] = self._values[pk][ck]
             else:
-                out[key] = self._values[key]
+                if isinstance(self._values[key], FlatDict):
+                    out[key] = self._values[key].as_dict()
+                else:
+                    out[key] = self._values[key]
         return out
 
     def clear(self):
